@@ -1,0 +1,1201 @@
+.nav-container {
+	@include make-row();
+}
+
+.nav {
+	@include make-md-column(12);
+	top: 20px;
+	font-size: 21px;
+	
+	&__item {
+		float: left;
+		margin-left: 30px;
+		text-transform: uppercase;
+	}
+	
+	&__link {
+		font-family: $secondaryFont;
+		color: $navLinkColor;
+	}
+	
+	&__link:active {
+		color: $black;
+		text-decoration: none;
+		border-bottom: 2px solid $black;
+	}
+	
+	&__link:hover {
+		color: $black;
+		text-decoration: none;
+		border-bottom: 2px solid $black;
+	}
+	
+	&__link:focus {
+		color: $black;
+		text-decoration: none;
+		border-bottom: 2px solid $black;
+	}
+	
+}
+
+
+.banner {
+	@include make-row();
+	
+	background: url(../images/banner.jpg) no-repeat center top;
+
+	&__content {
+		@include make-md-column(12);
+		min-height: 1062px;	
+		background: url(../images/john-doe.png) no-repeat center top;
+		background-size: 522px;
+		top: 215px;
+		right: 5px;
+	}
+}
+
+// Discography
+
+.discography {
+	background: url(../images/discography-bg.jpg) no-repeat center bottom;
+	padding-bottom: 500px;
+
+	&__row {
+		@include make-row();
+	}
+	
+	&__heading-container {
+		@include make-md-column(12);
+		
+		text-align: center;
+	}
+
+	&__heading {
+		@include heading();
+		
+		background-image: url(../images/discography-heading-bg.jpg);
+		-webkit-background-clip: text;
+		color: transparent;
+		top: 30px;
+	}
+	
+	&__text {
+		@include make-md-column(8);
+		@include make-md-column-offset(2);
+		
+		text-align: center;
+		margin: 60px 0 50px 0;
+		color: $navLinkColor;
+		font-size: 14px;
+	}
+}
+
+.album {
+	margin-bottom: 100px;
+	
+	&__row {
+		@include make-row();
+		margin-top: 100px;
+	}
+		
+	&__title {
+		@include make-md-column(5);
+	
+		color: #808080;
+		font-family: $primaryFont;
+		font-weight: bold;
+		
+		& p {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $black;
+			font-family: $primaryFont;
+		}
+		
+		&::after {
+			content: '\0020';
+			position: absolute;
+			border: 1px solid $black;
+			width: 496px;
+			top: 25px;
+			left: 12px;
+		}
+	}
+	
+	&__description {
+		@include make-md-column(7);
+	}
+	&__description--first {
+		font-size: 20px;
+		font-weight: 700;
+		font-family: $primaryFont;
+		}
+		
+	&__description--second {
+		color: $scorpion;
+		font-family: $primaryFont;
+		font-size: 14px;
+		text-align: justify;
+		padding-top: 10px;
+	}
+	
+	&__description--button {
+	@include buttoning;
+	}
+	
+	&__description--list {
+	@include listing;
+	}
+	&__description--item {
+	@include iteming;
+	background: url('../images/play1.jpg') no-repeat;
+	}
+	&__description--link {
+	@include linking;
+	}
+	
+	&__description--link:active {
+		color: $white;
+		text-decoration: none;
+	}
+	
+	&__description--link:hover {
+		color: $white;
+		text-decoration: none;
+	}
+	
+	&__description--link:focus {
+		color: $white;
+		text-decoration: none;
+		
+	}
+
+	&__title--one {
+		@include make-md-column(5);
+		color: #808080;
+		font-family: $primaryFont;
+		font-weight: bold;
+		
+		& p {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $black;
+			font-family: $primaryFont;
+		}
+		
+		&::after {
+			content: '\0020';
+			position: absolute;
+			border: 1px solid $black;
+			width: 496px;
+			top: 25px;
+			left: 12px;
+		}
+	}
+	
+	
+	&__description--third {
+		font-size: 20px;
+		font-weight: 700;
+		font-family: $primaryFont;
+		}
+		
+	&__description--fouth {
+		color: $scorpion;
+		font-family: $primaryFont;
+		font-size: 14px;
+		text-align: justify;
+		padding-top: 10px;
+	}
+	
+	&__description--button2 {
+	@include buttoning;
+	top: 330px;
+	}
+	&__description--list2 {
+	@include listing;
+	}
+	&__description--item2 {
+	@include iteming;
+	background: url('../images/play2.jpg') no-repeat;
+	}
+	&__description--link2 {
+	@include linking;
+	color: $black;
+	}
+	
+	&__description--link2:active {
+		color: $black;
+		text-decoration: none;
+	}
+	
+	&__description--link2:hover {
+		color: $black;
+		text-decoration: none;
+	}
+	
+	&__description--link2:focus {
+		color: $black;
+		text-decoration: none;
+		
+	}
+	
+	&__title--two {
+		@include make-md-column(5);
+		color: #808080;
+		font-family: $primaryFont;
+		font-weight: bold;
+		margin-top: 20px;
+		
+		& p {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $black;
+			font-family: $primaryFont;
+		}
+		
+		&::after {
+			content: '\0020';
+			position: absolute;
+			border: 1px solid $black;
+			width: 496px;
+			top: 25px;
+			left: 12px;
+		}
+	}
+	
+	&__description--fifth {
+		font-size: 20px;
+		font-weight: 700;
+		font-family: $primaryFont;
+		}
+		
+	&__description--sixth {
+		color: $scorpion;
+		font-family: $primaryFont;
+		font-size: 14px;
+		text-align: justify;
+		padding-top: 10px;
+	}
+	
+	&__description--button3 {
+	@include buttoning;
+	top: 460px;
+	}
+	&__description--list3 {
+	@include listing;
+	}
+	&__description--item3 {
+	@include iteming;
+	background: url('../images/play3.jpg') no-repeat;
+	}
+	&__description--link3 {
+	@include linking;
+	color: $black;
+	}
+	
+	&__description--link3:active {
+		color: $black;
+		text-decoration: none;
+	}
+	
+	&__description--link3:hover {
+		color: $black;
+		text-decoration: none;
+	}
+	
+	&__description--link3:focus {
+		color: $black;
+		text-decoration: none;	
+	}
+}
+
+.consertTours {
+	background: url(../images/consert-bg.jpg) no-repeat center bottom;
+	padding-bottom: 180px;
+
+	&__row {
+		@include make-row();
+	}
+	
+	&__heading-container {
+		@include make-md-column(12);
+		
+		text-align: center;
+	}
+
+	&__heading {
+		@include heading();
+		background-image: linear-gradient(to bottom, #62a2ad, #8dbab3);
+		color: transparent;
+		-webkit-background-clip: text;
+		top: 130px;
+	}
+	
+	&__text {
+		@include make-md-column(8);
+		@include make-md-column-offset(2);
+		
+		text-align: center;
+		margin: 160px 0 50px 0;
+		color: $navLinkColor;
+		font-size: 14px;
+		
+	}
+}
+
+.consert {
+	margin-bottom: 100px;
+	
+	&__row {
+		@include make-row();
+		margin-top: 90px;
+	}
+		
+	&__title {
+		@include make-md-column(12);
+	
+		color: #808080;
+		font-family: $primaryFont;
+		font-weight: bold;
+		margin-top: 300px;
+		font-size: 14px;
+		
+		& p {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $black;
+			font-family: $primaryFont;
+			font-size: 14px;
+		}
+		
+		&::after {
+			content: '\0020';
+			position: absolute;
+			border: 1px solid $black;
+			width: 392px;
+			top: 25px;
+			left: 12px;
+		}
+	}
+	
+	&__description {
+		@include make-md-column(7);
+	}
+	&__description--first {
+		font-size: 23px;
+		font-weight: 700;
+		font-family: $primaryFont;
+		}
+		
+	&__description--second {
+		color: $scorpion;
+		font-family: $primaryFont;
+		font-size: 14px;
+		text-align: justify;
+		padding-top: 10px;
+		line-height: 1.5;
+	}
+	
+	&__description--button {
+	@include buttoning;
+	}
+	
+	&__description--list {
+	@include listing;
+	}
+	
+	&__description--item {
+	@include iteming;
+	border: 1px solid $black;
+	}
+	
+	&__description--link {
+	@include linking;
+	color: $black;
+	text-transform: none;
+	padding: 0 0;
+	padding-top: 19px;
+	text-align: center;
+		
+		&::after {
+		content: '\f105';
+		font-family: fontawesome;
+		padding-left: 15px;
+		}
+	
+	}
+	
+	&__description--link:active {
+		color: $black;
+		text-decoration: none;
+	}
+	
+	&__description--link:hover {
+		color: $black;
+		text-decoration: none;
+	}
+	
+	&__description--link:focus {
+		color: $black;
+		text-decoration: none;	
+	}
+	
+}
+
+.latterCompositions {
+	padding-bottom: 150px;
+
+	&__row {
+		@include make-row();
+	}
+	
+	&__heading-container {
+		@include make-md-column(12);
+		
+		text-align: center;
+		padding-top: 100px;
+	}
+
+	&__heading {
+		@include heading();
+	}
+	
+	&__text {
+		@include make-md-column(8);
+		@include make-md-column-offset(2);
+		
+		text-align: center;
+		padding-top: 30px;
+		color: $navLinkColor;
+		font-size: 14px;
+		margin-bottom: 166px;
+		
+	}
+}
+
+.letter {
+	margin-bottom: 55px;
+	float: left;
+
+	&__title {
+		float: left;
+		background: #f5f6f6;
+		width: 50%;
+		height: 415px;
+	}
+	
+	&__titleOne {
+		
+		margin: 34px 35px;
+		
+		color: #808080;
+		font-family: $primaryFont;
+		font-weight: bold;
+		
+		& p {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $navLinkColor;
+			font-family: $primaryFont;
+		}
+		
+		&::after {
+			content: '\0020';
+			position: absolute;
+			border: 1px solid $black;
+			width: 392px;
+		}
+	}
+	
+	&__titleTwo {
+		
+		margin: 34px 35px;
+		
+		& h3 {
+			text-transform: uppercase;
+			font-weight: 700;
+			color: $black;
+			font-family: $primaryFont;
+			font-size: 19px;
+		}
+	}
+	
+	&__titleThree {
+		
+		margin: 50px 35px;
+		
+		& p {
+			font-weight: 700;
+			color: $navLinkColor;
+			font-family: $primaryFont;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+	}
+	
+	&__titleFour {
+		
+		margin: 0 35px;
+		float: left;
+		
+		& p {
+			font-weight: 700;
+			color: $navLinkColor;
+			font-family: $primaryFont;
+			font-size: 14px;
+		}
+	}
+	
+	&__titleFour--button {
+	@include buttoning;
+	}
+	
+	&__titleFour--list {
+	@include listing;
+	}
+	
+	&__titleFour--item {
+	@include iteming;
+	border: 1px solid $black;
+	}
+	
+	&__titleFour--link {
+	@include linking;
+	color: $black;
+	text-transform: none;
+	padding: 0 0;
+	padding-top: 19px;
+	text-align: center;
+	font-family: $primaryFont;
+		
+		&::after {
+		content: '\f105';
+		font-family: fontawesome;
+		padding-left: 15px;
+		}
+	
+	}
+	
+	
+	&__titleFour--link:active {
+		color: $black;
+		text-decoration: none;
+	}
+	
+	&__titleFour--link:hover {
+		color: $black;
+		text-decoration: none;
+	}
+	
+	&__titleFour--link:focus {
+		color: $black;
+		text-decoration: none;	
+	}
+	
+	&__menushka {
+		margin-top: 105px;
+	}
+	
+	&__list {
+		display: inline-block;
+		font-size: 15px;
+	}
+	
+	&__item {
+		display: inline-block;
+		list-style-type: none;
+		color: #e1e1e1;
+		margin-right: 20px;
+	}
+	&__link {
+		display: block;
+		color: #abacac;
+		text-decoration: none;
+		font-family: fontawesome;
+	}
+
+	&__video {
+		float: left;
+	}
+}
+
+.carousel {
+	background: url('../images/ocean-bg.png') no-repeat center center;
+	height: 642px;
+	width: 100%;
+}
+
+.new {
+
+}
+
+.block {
+	margin-top: 160px;
+
+	&__row {
+		@include make-row();
+	}
+	
+	&__one {
+		@include make-md-column(4);
+		
+		padding: 30px;
+		height: 422px;
+		width: 386px;
+		overflow: hidden;
+		background: url('../images/block1.jpg') no-repeat center bottom;
+		
+		& span {
+			font-family: $primaryFont;
+			color: #808080;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		& hr {
+			border: none;
+			height: 1px;
+			background-color: $black;
+			margin: 5px auto 5px auto;
+		}
+		
+		& h6 {
+			font-family: $primaryFont;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		
+		& h4 {
+			margin: 40px auto 40px auto;
+			color: $black;
+			font-size: 23px;
+			line-height: 1.1;
+		}
+		
+		& p {
+			font-family: $primaryFont;
+			color: #808080;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
+		& h5 {
+			position: absolute;
+			font-size: 82px;
+			bottom: 0px;
+			right: 10px;
+			color: rgba(163, 164, 164, 0.5);
+			outline: none;
+		}
+		
+		&::after {
+			content: '01';
+			position: absolute;
+			font-size: 82px;
+			bottom: 0px;
+			right: 10px;
+			color: rgba(163, 164, 164, 0.5);
+			outline: none;
+		}
+	}
+	
+	&__two {
+		@include make-md-column(4);
+		
+		padding: 30px;
+		height: 422px;
+		width: 386px;
+		background: url('../images/block2.jpg') no-repeat center center;
+		overflow: hidden;
+		
+		& span {
+			font-family: $primaryFont;
+			color: #808080;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		& hr {
+			border: none;
+			height: 1px;
+			background-color: $black;
+			margin: 5px auto 5px auto;
+		}
+		
+		& h6 {
+			font-family: $primaryFont;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		
+		& h4 {
+			margin: 40px auto 40px auto;
+			color: $black;
+			font-size: 23px;
+			line-height: 1.1;
+		}
+		
+		& p {
+			font-family: $primaryFont;
+			color: #808080;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
+		&::after {
+			content: '02';
+			position: absolute;
+			font-size: 82px;
+			bottom: 0px;
+			right: 10px;
+			color: rgba(163, 164, 164, 0.5);
+			outline: none;
+		}
+	}
+	
+	&__three {
+		@include make-md-column(4);
+	
+		padding: 30px;
+		height: 422px;
+		width: 386px;
+		background: url('../images/block3.jpg') no-repeat center center;
+		overflow: hidden;
+		
+		& span {
+			font-family: $primaryFont;
+			color: #808080;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		& hr {
+			border: none;
+			height: 1px;
+			background-color: $black;
+			margin: 5px auto 5px auto;
+		}
+		
+		& h6 {
+			font-family: $primaryFont;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		
+		& h4 {
+			margin: 40px auto 40px auto;
+			color: $black;
+			font-size: 23px;
+			line-height: 1.1;
+		}
+		
+		& p {
+			font-family: $primaryFont;
+			color: #808080;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
+		&::after {
+			content: '03';
+			position: absolute;
+			font-size: 82px;
+			bottom: 0px;
+			right: 10px;
+			color: rgba(163, 164, 164, 0.5);
+			outline: none;
+		}
+	}
+}
+
+.block1 {
+	margin-top: 30px;
+	padding-bottom: 164px;
+
+	&__row {
+		@include make-row();
+	}
+	
+	&__four {
+		@include make-md-column(4);
+	
+		padding: 30px;
+		height: 422px;
+		width: 386px;
+		background: url('../images/block4.jpg') no-repeat center center;
+		overflow: hidden;
+		
+		& span {
+			font-family: $primaryFont;
+			color: #808080;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		& hr {
+			border: none;
+			height: 1px;
+			background-color: $black;
+			margin: 5px auto 5px auto;
+		}
+		
+		& h6 {
+			font-family: $primaryFont;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		
+		& h4 {
+			margin: 40px auto 40px auto;
+			color: $black;
+			font-size: 23px;
+			line-height: 1.1;
+		}
+		
+		& p {
+			font-family: $primaryFont;
+			color: #808080;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
+		&::after {
+			content: '04';
+			position: absolute;
+			font-size: 82px;
+			bottom: 0px;
+			right: 10px;
+			color: rgba(163, 164, 164, 0.5);
+			outline: none;
+		}
+	}
+	
+	&__five {
+		@include make-md-column(4);
+	
+		padding: 30px;
+		height: 422px;
+		width: 386px;
+		background: url('../images/block5.jpg') no-repeat center center;
+		overflow: hidden;
+		
+		& span {
+			font-family: $primaryFont;
+			color: #808080;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		& hr {
+			border: none;
+			height: 1px;
+			background-color: $black;
+			margin: 5px auto 5px auto;
+		}
+		
+		& h6 {
+			font-family: $primaryFont;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		
+		& h4 {
+			margin: 40px auto 40px auto;
+			color: $black;
+			font-size: 23px;
+			line-height: 1.1;
+		}
+		
+		& p {
+			font-family: $primaryFont;
+			color: #808080;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
+		&::after {
+			content: '05';
+			position: absolute;
+			font-size: 82px;
+			bottom: 0px;
+			right: 10px;
+			color: rgba(163, 164, 164, 0.5);
+			outline: none;
+		}
+	}
+	
+	&__six {
+		@include make-md-column(4);
+	
+		padding: 30px;
+		height: 422px;
+		width: 386px;
+		background: url('../images/block6.jpg') no-repeat center center;
+		overflow: hidden;
+		
+		& span {
+			font-family: $primaryFont;
+			color: #808080;
+			font-weight: bold;
+			font-size: 14px;
+		}
+		
+		& hr {
+			border: none;
+			height: 1px;
+			background-color: $black;
+			margin: 5px auto 5px auto;
+		}
+		
+		& h6 {
+			font-family: $primaryFont;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		
+		& h4 {
+			margin: 40px auto 40px auto;
+			color: $black;
+			font-size: 23px;
+			line-height: 1.1;
+		}
+		
+		& p {
+			font-family: $primaryFont;
+			color: #808080;
+			font-size: 16px;
+			line-height: 24px;
+		}
+		
+		&::after {
+			content: '06';
+			position: absolute;
+			font-size: 82px;
+			bottom: 0px;
+			right: 10px;
+			color: rgba(163, 164, 164, 0.5);
+			outline: none;
+		}
+	}
+}
+
+.upcoming {
+	background: url(../images/upcom.jpg) no-repeat center center;
+	padding-bottom: 150px;
+
+	&__row {
+		@include make-row();
+	}
+	
+	&__heading-container {
+		@include make-md-column(10);
+		@include make-md-column-offset(1);
+		
+		text-align: right;
+		top: 100px;
+	}
+
+	&__heading {
+		@include heading();
+		background-color: #42717e;
+		color: transparent;
+		-webkit-background-clip: text;
+		top: 130px;
+	}
+	
+	&__description {
+		width: 39%;
+		margin-left: 59%;
+		margin-top: 30%;
+	}
+	
+	&__title {
+		font-size: 23px;
+		color: $black;
+		font-family: $primaryFont;
+	}
+	
+	&__horizontal {
+		margin: 10px auto 10px 0;
+		border: none;
+		height: 1px;
+		background-color: $black;
+		width: 130px;
+	}
+	
+	&__text {
+		font-family: OpenSans;
+		color: #808080;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	
+	&__vertical {
+		width: 1px;
+		height: 60px;
+		margin-left: 30px;
+		background-color: $black;
+	}
+	
+	&__date {
+		color: #595959;
+		font-family: &primaryFont;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	
+	&__vertical--big {
+		width: 1px;
+		height: 160px;
+		margin-left: 30px;
+		background-color: $black;
+	}
+}
+
+.history {
+	background: url(../images/history.jpg) no-repeat center bottom;
+	padding-bottom: 600px;
+
+	&__row {
+		@include make-row();
+	}
+	
+	&__heading-container {
+		@include make-md-column(12);
+		
+		text-align: center;
+	}
+
+	&__heading {
+		@include heading();
+		background-color: #5b5c5a;
+		color: transparent;
+		-webkit-background-clip: text;
+		top: 130px;
+	}
+	
+	&__text {
+		@include make-md-column(8);
+		@include make-md-column-offset(2);
+		
+		text-align: center;
+		margin: 160px 0 50px 0;
+		color: $navLinkColor;
+		font-size: 14px;
+		
+	}
+}
+
+.description {
+		@include make-md-column(12);
+		text-align: center;
+		margin-top: 270px;
+		color: $navLinkColor;
+		font-size: 14px;
+	}
+	
+.contact {
+	background: url(../images/contact.jpg) no-repeat center center;
+	padding-bottom: 260px;
+
+	&__row {
+		@include make-row();
+	}
+	
+	&__heading-container {
+		@include make-md-column(6);
+		@include make-md-column-offset(4);
+		
+		text-align: right;
+		top: 100px;
+	}
+
+	&__heading {
+		@include heading();
+		background-color: #5b5c5a;
+		-webkit-background-clip: text;
+		top: 130px;
+		right: 85px;
+	}
+	
+	&__description {
+		width: 39%;
+		margin-left: 59%;
+		margin-top: 25%;
+	}
+	
+	&__text {
+		font-family: OpenSans;
+		color: #808080;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	
+	&__form {
+		width: 80%;
+		margin-top: 70px;
+	}
+	
+	& input {
+		display: block;
+		width: 85%;
+		border: none;
+		border-bottom: 1px solid $black;
+		margin-bottom: 40px;
+		background-color: transparent;
+		color: $black;
+		outline: none;
+	}
+	
+	& button {
+		font-family: $primaryFont;
+		font-size: 20px;
+		color: $black;
+		border: none;
+		background-color: transparent;
+		font-weight: bold;
+		margin-left: -5px;
+		outline: none;
+		cursor: pointer;
+	}
+	
+	&__social {
+		height: auto;
+		margin-left: 92%;
+		margin-top: -238px;
+	}
+	
+	&__vertical {
+		width: 1px;
+		height: 138px;
+		margin: 4px 28px 25px 0;
+		background-color: $black;
+		border: none;
+		float: left;
+	}
+	
+	&__link {
+		display: block;
+		color: $black ;
+		text-decoration: none;
+		margin-top: 44px;
+		font-size: 16px;
+	}
+}
+
+
+
+

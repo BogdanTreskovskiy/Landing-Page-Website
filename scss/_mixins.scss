@@ -1,0 +1,49 @@
+@mixin heading {
+	display: inline;
+	padding: 0 23px;
+	font-family: $secondaryFont;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	
+	&::before {
+		content: '\0020';
+		display: block;
+		width: 100%;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		height: 1px;
+		background: $headingLineColor;
+	}
+}
+
+@mixin buttoning {
+	display: block;
+	margin-top: 20px;
+}
+
+@mixin listing {
+	display: inline-block;
+}
+
+@mixin iteming {
+	display: inline-block;
+	list-style-type: none;
+	width: 196px;
+	height: 56px;
+}
+
+@mixin linking {
+	display: inline-block;
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	padding: 10% 41%;
+	font-family: $primaryFont;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
